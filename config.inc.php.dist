@@ -1,0 +1,26 @@
+<?php
+/**
+ * Cloudflare Turnstile + SSL.COM Seal
+ * Default configuration template
+ *
+ * Copy this file to config/cloudflare_turnstile.inc.php and edit the values.
+ */
+
+// =====================================================
+// Cloudflare Turnstile (Required for the widget)
+// =====================================================
+$config['turnstile_sitekey']    = '';
+$config['turnstile_secret']     = '';
+$config['turnstile_theme']      = 'light';        // 'light' or 'dark'
+
+// Optional: IPs that bypass Turnstile (e.g. office IPs)
+$config['turnstile_bypass_ips'] = [];
+
+// =====================================================
+// SSL.COM Site Seal (Optional)
+// =====================================================
+// Set sslcom_seal_enabled = true and fill in your own values
+// if you want to show an SSL.COM seal below the login form.
+$config['sslcom_seal_enabled'] = false;
+$config['sslcom_seal_team']    = '';   // Your SSL.COM team ID
+$config['sslcom_seal_id']      = '';   // Your specific seal ID
